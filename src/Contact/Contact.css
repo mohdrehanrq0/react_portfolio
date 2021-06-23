@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+
+
+.contact_page_main_div{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0, 0, 0,0.1)),url("../images/contact.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.about_head{
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.about_head h1{
+    font-size: 70px;
+    font-family: 'Righteous', cursive;
+    color: #f0f0f0;
+    position: relative;
+    text-shadow: 0px 0px 0px #364f6b;
+}
+.about_head h1:before{
+    content: "";
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: #fc5185;
+    left: 50%;
+    transform: translate(-50%,10px);
+    border-radius: 2px;
+    box-shadow: 0px 0px 40px #fc5185;
+    
+}
+.display{
+	width: 100%;
+	height: 100vh;
+	background: #060608;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container_gts{
+	width: 80%;
+	height: 500px;
+	background: #364f6b;
+	display: flex;
+	text-align: center;
+}
+.container_gts form{
+	width: 50%;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+}
+.container_gts form h1{
+	margin:35px 0%;
+	font-size: 2.5em; 
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #fff;
+
+
+}
+.container_gts .input{
+	height: 90px;
+	width: 100%;
+	padding: 0px;
+	position: relative;
+
+}
+.container_gts .input span{	
+	position: absolute;
+	left: 20%;
+	top:0%;
+    transition: 0.5s;
+	font-size: 17px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.3);
+	pointer-events: none;
+	padding-top: 8px;
+
+}
+.container_gts .input input{
+	width: 60%;
+	height: 30px;
+	margin:0px 20% 10px 20%;
+	background: transparent;
+	border:none;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #fff;
+}
+.container_gts .input textarea{
+	width: 60%;
+	height: 90px;
+	margin:0px 20% 10px 20%;
+	background: transparent;
+	resize: none;
+	border:none;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #fff;
+}
+
+.container_gts .input input[type="submit"]:focus{
+	background: #1B9CFC;  
+	transition: 0.3s;
+}
+.container_gts .input input:focus ~ span,
+.container_gts .input textarea:focus ~ span,
+.container_gts .input input:valid ~ span
+{
+	transform: translateY(-32px);
+	color: #fc5185;
+	font-size: 15px;
+
+}
+.container_gts .input input:focus,
+.container_gts .input textarea:focus, 
+.container_gts .input input:valid
+
+{
+		border:none;
+		border-bottom: 3px solid #fff;
+}
+.container_gts .input input[type="submit"]{
+	background: #fc5185;
+	width: 130px;
+	height: 40px;
+	border-bottom: none;
+	margin-top: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 500;
+	text-shadow: 4px 4px 9px rgba(0,0,0,0.5);
+}
+.imgbox{
+	position: relative;
+	width: 50%;
+	height: 500px;
+	overflow: hidden;
+
+}
+.imgbox:before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #fc5185;
+	transform-origin: bottom;
+	transform: skewX(-25deg) translateX(10%);
+}
+.imgbox img{
+	position: absolute;
+	bottom: 0px;
+	right: 32%;
+	max-height: 95%;
+}
+@media (max-width: 1000px){
+	.container_gts{
+		width: 100%;
+	}
+}
+@media (max-width: 700px){
+	.imgbox{
+		width: 0%;
+	}
+	.container_gts form{
+		width: 95%;
+	}
+}
+.container_gts{
+    font-family: 'Roboto Condensed', sans-serif ;
+}
+.container_gts form h1{
+    font-family: 'Righteous', cursive;
+}
+input:focus-visible {
+    outline-offset: unset;
+}
+:focus-visible {
+    outline: unset;
+}
+.end_footer{
+    position: absolute;
+    bottom: 0;
+    background: #26374b;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end_footer p{
+    margin-bottom: 0;
+    padding: 16.5px 0;
+    font-size: 1rem;
+}
+.after__submit p{
+	margin-bottom: 0;
+	color: #fff;
+}

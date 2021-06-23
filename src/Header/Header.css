@@ -1,0 +1,111 @@
+/* // import styled from "styled-components";
+
+// const Navbar = styled.nav`
+//     height:10vh;
+//     min-height:70px;
+//     display:flex;
+//     justify-content:center;
+//     align-items:center;
+//     background:#34495e;
+// `;
+// const NavList = styled.li`
+//     list-style:none;
+
+// `;
+// const NavCollapseBtn = styled.button`
+    
+
+// `;
+// const NavListItem = styled.li`
+//     list-style:none;
+
+// `;
+// const Link = styled.a`
+//     list-style:none;
+
+// `;
+// const Div = styled.div`
+//     display:block;
+
+// `;
+// // const NavList = styled.li`
+// //     list-style:none;
+
+// // `;
+
+
+// export {Navbar , NavList ,NavCollapseBtn , NavListItem, Link,Div}  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+a.middle{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.gts_navbar{
+    background-color: #364f6b;
+    color: #ffffff;
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+}
+.gts_nav_collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.gts_nav_link{
+    color: #ffffff !important;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+}
+.nav-item{
+    margin: 0 8px;
+}
+
+a.middle
+{
+    position: relative;
+    transition: 0.5s ease;
+}
+.navbar-light .navbar-toggler{
+    margin: 0 auto;
+    padding:0;
+    border-color: #ffffff;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+    height: auto;
+    width: auto;
+}
+.navbar-light .navbar-toggler-icon svg{
+    fill: #ffffff;
+    height: 40px;
+    width: 50px;
+    
+}
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  bottom: 0;
+  left: 5%;
+  background-color: #fc5185;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.middle:hover:before,a.middle:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+} 
+a.active.middle:before{
+  visibility: visible;
+  transform: scaleX(1);
+}

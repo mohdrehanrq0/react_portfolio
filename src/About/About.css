@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+/* 
+font-family: 'Righteous', cursive;
+font-family: 'Roboto Condensed', sans-serif !important;
+ */
+section.main_about_wrap{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0, 0, 0,0.1)),url("../images/about-bg.jpeg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.about_head{
+    text-align: center;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.about_head h1{
+    font-size: 70px;
+    font-family: 'Righteous', cursive;
+    color: #f0f0f0;
+    position: relative;
+    text-shadow: 0px 0px 0px #364f6b;
+}
+.about_head h1:before{
+    content: "";
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: #fc5185;
+    left: 50%;
+    transform: translate(-50%,10px);
+    border-radius: 2px;
+    box-shadow: 0px 0px 40px #fc5185;
+    
+}
+.name_head h2{
+    font-size: 3.35rem;
+    color: #fc5185;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 3px #fc5185;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+.name_sub_head h5{
+    font-size: 1.95rem;
+    line-height: 30px;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    color: #f0f0f0;
+}
+.name_para_head{
+    margin-top: 20px;
+}
+.name_para_head p{
+    padding-right: 2rem;
+    color: #f0f0f0;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+}
+.percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+.percent svg  circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);    
+}
+.percent svg circle:nth-child(2){
+    stroke-dasharray: 440 ;
+    stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #fc5185;
+}
+/* .card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 85) / 100) ;
+    stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #ff04f7;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke: #00ff43;
+} */
+.skillbar_section{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    background: #101010c2;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    padding-top: 60px;
+}
+.card{
+    position: relative;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5  );
+}
+.card:before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background: rgba(255,255,255,0.03);
+    pointer-events: none;
+    z-index: 100000;
+}
+.percent{
+    position:relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.number h2{
+    color: #777;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.card:hover .number h2{
+    font-size: 60px;
+    color: #fff;
+}
+.number h2 span{
+    font-size: 24px;
+    font-weight: 700;
+}
+.card:hover .number h2 span{
+    color: #fff;
+}
+.text{
+    font-size: 18px;
+    position: relative;
+    font-weight: 700;
+    color: #777;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.card:hover .text{
+    color: #fff ;
+}
+.rec-arrow{
+    background-color: #fc5185 !important;
+    color: #fff !important;
+}
+.rec-dot {
+    background: #fc5185 !important;
+    color: #fff;
+}
+.rec-arrow[disabled] {
+    transform: scale(0) !important;
+}
+.skillbar_section h3{
+    position: absolute;
+    top: 10px;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #f0f0f0;
+}
+@media (max-width:992px) {
+    .about_gts_container{
+        width: 100%;
+    }
+    .name_head h2{
+        font-size: 2.4rem;
+    }
+    .name_sub_head h5{
+        font-size: 1.40rem;
+    }
+}
+@media (max-width:768px) {
+    .about_gts_col_6{
+        margin-top: 1rem;
+    }
+    section.main_about_wrap{
+        height: auto;
+    }
+    .about_gts_container{
+        margin-top: 9rem;
+    }
+}
+@media (max-width:430px) {
+    .card{
+        min-width: 200px;
+    }
+    .rec-arrow{
+        display: none;
+    }
+    .App{
+        scroll-snap-type: none;
+    }
+}
+@media (max-width:330px) {
+    .about_head{
+        padding-top: 30px;
+    }
+    .about_head h1{
+        font-size: 60px;
+    }
+    .about_gts_col_6{
+        margin-top: 3.5rem;
+    }
+    .name_head h2{
+        font-size: 1.8rem;
+    }
+    .name_sub_head h5{
+        font-size: 1.1rem;
+    }
+    .name_para_head p{
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
