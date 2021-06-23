@@ -2,9 +2,9 @@ import React from 'react'
 import '../About/About.css'
 import '../Portfolio/Portfolio.css'
 import PortCard from './PortCard'
-import web from '../images/web.png'
-import web_two from '../images/web_two.PNG'
-import web_ui from '../images/web_ui.PNG'
+import web from '../images/web.jpeg'
+import web_two from '../images/web_two.jpeg'
+import web_ui from '../images/web_ui.jpeg'
 
 
 function Portfolio() {
