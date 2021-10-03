@@ -9,7 +9,7 @@
     transition: 0.5s;
 }
 #card_main_wrap:hover{
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
     transform:0.5s;
     position: relative;
     top: -5px;
